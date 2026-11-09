@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+logs/*.log
+planner_env/
+.venv/
+config.json
+json/user_config.json

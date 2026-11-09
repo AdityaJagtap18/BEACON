@@ -1,0 +1,101 @@
+Sales_Rep_ID,Sales_Rep_Name,Customer_ID,Customer_Name,Customer_Location,Customer_Latitude,Customer_Longitude,Days_Since_Last_Visit,Opportunity_Stage,SLA_Due_Hours,Customer_Priority,Last_Visited_Date,Visit_Count,Incentive,Product_Sold,Opportunity_Stage_Numeric,Customer_Priority_Numeric,VisitedBinary,VisitedYesOrNo,VisitedYesOrNo_Percentage,VisitedYesOrNo
+SR001,Kristin Schroeder,CUST001,Black-Mayer,"Aberdeen, UK",57.1497,-2.0943,12,Closed Won,164,Low,08-02-2025,14,1500,Industrial Valves,1,1,1,0.964885278,96.4885278,1
+SR002,Betty Henry,CUST002,"Carter, Hudson and Smith","Doha, Qatar",25.276987,51.520008,28,Prospecting,28,High,7/17/2025,10,1000,Pressure Regulators,3,0,1,0.58605443,58.605443,1
+SR003,Victoria Holmes,CUST003,Gentry-Andersen,"Perth, Australia",-31.9505,115.8605,50,Negotiation,40,Low,6/25/2025,11,1500,Pressure Regulators,2,1,0,0.032739829,3.2739829,0
+SR004,Jacob Webster,CUST004,Young-Smith,"Rotterdam, Netherlands",51.9225,4.47917,26,Closed Lost,130,Medium,7/19/2025,5,500,Industrial Valves,0,2,1,0.717668603,71.7668603,1
+SR005,Kim Curry,CUST005,Larson-Herrera,"Aberdeen, UK",57.1497,-2.0943,15,Closed Won,151,High,7/30/2025,8,500,Pressure Regulators,1,0,1,0.908293886,90.8293886,1
+SR006,Brian Escobar,CUST006,Vega-Cook,"Calgary, Canada",51.0447,-114.0719,46,Prospecting,82,Low,6/29/2025,11,1500,Pressure Regulators,3,1,0,0.039446183,3.9446183,0
+SR007,Kristin Smith,CUST007,"Mckenzie, James and Levy","Houston, USA",29.7604,-95.3698,2,Prospecting,130,High,08-12-2025,3,500,Gas Flow Meters,3,0,1,0.982978213,98.2978213,1
+SR008,Richard Pennington,CUST008,"Burton, Davis and Benton","Dubai, UAE",25.276987,55.296249,10,Negotiation,134,Low,08-04-2025,4,0,Gas Flow Meters,2,1,1,0.959612627,95.9612627,1
+SR009,Deanna Cooper,CUST009,Jenkins PLC,"Oslo, Norway",59.9139,10.7522,46,Closed Won,38,High,6/29/2025,13,1000,Gas Flow Meters,1,0,0,0.081670886,8.1670886,0
+SR010,Nicole Koch,CUST010,Carroll Group,"Calgary, Canada",51.0447,-114.0719,21,Closed Lost,64,Low,7/24/2025,6,500,Industrial Valves,0,1,1,0.898608539,89.8608539,1
+SR011,Jody Martinez,CUST011,White Group,"Perth, Australia",-31.9505,115.8605,46,Prospecting,80,Low,6/29/2025,5,500,Gas Flow Meters,3,1,0,0.030309588,3.0309588,0
+SR012,John Oconnor,CUST012,Woodward PLC,"Doha, Qatar",25.276987,51.520008,5,Prospecting,77,Medium,08-09-2025,7,500,Gas Flow Meters,3,2,1,0.991024535,99.1024535,1
+SR013,Scott Andrews,CUST013,Martinez Inc,"Oslo, Norway",59.9139,10.7522,58,Prospecting,98,Low,6/17/2025,7,1500,Pipeline Equipment,3,1,0,0.002828035,0.2828035,0
+SR014,Christian Mcgrath,CUST014,"Rose, Banks and Smith","Calgary, Canada",51.0447,-114.0719,47,Negotiation,118,Medium,6/28/2025,12,1500,Pressure Regulators,2,2,0,0.044293752,4.4293752,0
+SR015,Troy Stewart,CUST015,"Harris, Greene and Gray",Singapore,1.3521,103.8198,25,Closed Lost,165,Low,7/20/2025,11,1000,Safety Systems,0,1,1,0.721733169,72.1733169,1
+SR016,David Jackson,CUST016,White Group,"Perth, Australia",-31.9505,115.8605,43,Closed Lost,167,Low,07-02-2025,6,1000,Pipeline Equipment,0,1,0,0.056330184,5.6330184,0
+SR017,Christopher Sims,CUST017,Peck Group,"Oslo, Norway",59.9139,10.7522,11,Prospecting,90,Low,08-03-2025,10,1500,Safety Systems,3,1,1,0.963820196,96.3820196,1
+SR018,Mary Perez,CUST018,"Wagner, Green and Williams","Houston, USA",29.7604,-95.3698,51,Negotiation,140,High,6/24/2025,15,1000,Safety Systems,2,0,0,0.01428421,1.428421,0
+SR019,Drew Kelly,CUST019,Aguilar LLC,Singapore,1.3521,103.8198,2,Prospecting,165,Medium,08-12-2025,6,500,Industrial Valves,3,2,1,0.989393543,98.9393543,1
+SR020,Margaret Jones,CUST020,"Vasquez, Farley and Garner","Oslo, Norway",59.9139,10.7522,4,Negotiation,121,Medium,08-10-2025,8,0,Industrial Valves,2,2,1,0.992963609,99.2963609,1
+SR021,Jennifer Curry,CUST021,Petersen LLC,"Aberdeen, UK",57.1497,-2.0943,6,Closed Won,168,Low,08-08-2025,5,1000,Industrial Valves,1,1,1,0.978988919,97.8988919,1
+SR022,Brandi Johnson,CUST022,"Washington, Cook and Fowler","Doha, Qatar",25.276987,51.520008,4,Closed Lost,46,High,08-10-2025,1,500,Industrial Valves,0,0,1,0.992637082,99.2637082,1
+SR023,Heather Jordan,CUST023,Oliver-Adams,"Aberdeen, UK",57.1497,-2.0943,58,Prospecting,130,Low,6/17/2025,1,0,Industrial Valves,3,1,0,0.001790756,0.1790756,0
+SR024,Brandi Little,CUST024,Mason Ltd,"Doha, Qatar",25.276987,51.520008,12,Closed Won,60,Medium,08-02-2025,3,1000,Safety Systems,1,2,1,0.974502722,97.4502722,1
+SR025,Teresa Williams,CUST025,Carter-Thomas,Singapore,1.3521,103.8198,29,Prospecting,106,Medium,7/16/2025,11,1500,Safety Systems,3,2,1,0.524910504,52.4910504,1
+SR026,Tiffany Conrad,CUST026,Durham-Harris,"Perth, Australia",-31.9505,115.8605,54,Prospecting,48,Medium,6/21/2025,6,1500,Industrial Valves,3,2,0,0.010549029,1.0549029,0
+SR027,Michael Hart,CUST027,"Wood, Black and Bradley","Aberdeen, UK",57.1497,-2.0943,8,Prospecting,54,High,08-06-2025,5,0,Industrial Valves,3,0,1,0.976127866,97.6127866,1
+SR028,Cynthia Garcia,CUST028,"Cooper, Preston and Wilson","Dubai, UAE",25.276987,55.296249,40,Negotiation,109,High,07-05-2025,5,0,Pipeline Equipment,2,0,0,0.075925202,7.5925202,0
+SR029,Susan Hendricks,CUST029,Diaz Ltd,"Calgary, Canada",51.0447,-114.0719,22,Negotiation,91,Low,7/23/2025,14,1500,Safety Systems,2,1,1,0.849485224,84.9485224,1
+SR030,Sandra Griffith,CUST030,Martinez-Allen,"Dubai, UAE",25.276987,55.296249,37,Negotiation,151,High,07-08-2025,15,0,Industrial Valves,2,0,0,0.177711389,17.7711389,0
+SR031,David Powell,CUST031,Brown Inc,Singapore,1.3521,103.8198,47,Prospecting,69,Low,6/28/2025,4,1500,Safety Systems,3,1,0,0.022193777,2.2193777,0
+SR032,Benjamin Reed,CUST032,Arroyo Ltd,"Doha, Qatar",25.276987,51.520008,19,Negotiation,165,High,7/26/2025,8,0,Gas Flow Meters,2,0,1,0.778736514,77.8736514,1
+SR033,Holly Strong,CUST033,Carter Group,"Dubai, UAE",25.276987,55.296249,22,Prospecting,120,Low,7/23/2025,10,1500,Gas Flow Meters,3,1,1,0.727074124,72.7074124,1
+SR034,Angela Robles,CUST034,Hernandez Inc,"Oslo, Norway",59.9139,10.7522,47,Closed Lost,24,Low,6/28/2025,11,1000,Industrial Valves,0,1,0,0.10552646,10.552646,0
+SR035,John Myers,CUST035,Hubbard Inc,"Rotterdam, Netherlands",51.9225,4.47917,35,Closed Lost,141,Medium,07-10-2025,5,1000,Pressure Regulators,0,2,0,0.284936035,28.4936035,0
+SR036,Lisa Lee,CUST036,"Nelson, Moran and Quinn","Mumbai, India",19.076,72.8777,15,Closed Lost,96,High,7/30/2025,7,1500,Pressure Regulators,0,0,1,0.939267391,93.9267391,1
+SR037,Joshua Thomas,CUST037,Palmer-Burke,"Calgary, Canada",51.0447,-114.0719,16,Closed Lost,62,Medium,7/29/2025,14,0,Pipeline Equipment,0,2,1,0.9828742,98.28742,1
+SR038,Brad Cohen,CUST038,Franco LLC,Singapore,1.3521,103.8198,21,Negotiation,35,Low,7/24/2025,10,500,Pressure Regulators,2,1,1,0.899964264,89.9964264,1
+SR039,Colleen Ramirez,CUST039,Shah LLC,"Oslo, Norway",59.9139,10.7522,36,Closed Won,107,Low,07-09-2025,4,1500,Industrial Valves,1,1,0,0.181698847,18.1698847,0
+SR040,Lisa Smith,CUST040,Moreno Inc,"Houston, USA",29.7604,-95.3698,53,Closed Lost,160,Low,6/22/2025,5,0,Pipeline Equipment,0,1,0,0.010122148,1.0122148,0
+SR041,Robert Lopez,CUST041,Martinez-Lynch,"Houston, USA",29.7604,-95.3698,31,Closed Won,37,Low,7/14/2025,12,1000,Pipeline Equipment,1,1,0,0.6482993,64.82993,1
+SR042,Julian Bradley,CUST042,"Parsons, Nash and Richardson",Singapore,1.3521,103.8198,20,Closed Won,113,High,7/25/2025,10,500,Safety Systems,1,0,1,0.855569322,85.5569322,1
+SR043,Jonathan Bowman,CUST043,Williams-Chavez,Singapore,1.3521,103.8198,11,Closed Lost,41,High,08-03-2025,4,500,Safety Systems,0,0,1,0.978863446,97.8863446,1
+SR044,Amy Smith,CUST044,Wilson Ltd,"Houston, USA",29.7604,-95.3698,13,Prospecting,63,Low,08-01-2025,7,1500,Safety Systems,3,1,1,0.947506486,94.7506486,1
+SR045,Kathleen Hill,CUST045,Brooks Inc,"Mumbai, India",19.076,72.8777,42,Prospecting,33,Low,07-03-2025,4,1500,Safety Systems,3,1,0,0.071072208,7.1072208,0
+SR046,Craig Rowe,CUST046,Cox Inc,"Houston, USA",29.7604,-95.3698,10,Prospecting,86,High,08-04-2025,4,0,Safety Systems,3,0,1,0.953489212,95.3489212,1
+SR047,Candice Odonnell,CUST047,Smith-Carpenter,"Houston, USA",29.7604,-95.3698,7,Prospecting,114,High,08-07-2025,15,1000,Safety Systems,3,0,1,0.982405472,98.2405472,1
+SR048,Mark Richards,CUST048,Branch-Thomas,"Oslo, Norway",59.9139,10.7522,1,Negotiation,116,Medium,8/13/2025,15,1000,Safety Systems,2,2,1,0.997304143,99.7304143,1
+SR049,Douglas Freeman,CUST049,Campbell-Johnson,"Oslo, Norway",59.9139,10.7522,55,Negotiation,150,High,6/20/2025,1,500,Gas Flow Meters,2,0,0,0.002478237,0.2478237,0
+SR050,Christina Mcclain,CUST050,Green Inc,"Rotterdam, Netherlands",51.9225,4.47917,53,Closed Lost,107,High,6/22/2025,5,0,Pipeline Equipment,0,0,0,0.011572481,1.1572481,0
+SR051,Donald Mitchell,CUST051,King Inc,"Dubai, UAE",25.276987,55.296249,31,Prospecting,26,High,7/14/2025,4,1000,Pipeline Equipment,3,0,0,0.346613475,34.6613475,0
+SR052,Jeffrey Williams,CUST052,"Thomas, Townsend and Rhodes","Rotterdam, Netherlands",51.9225,4.47917,36,Prospecting,108,High,07-09-2025,7,0,Pipeline Equipment,3,0,0,0.137262578,13.7262578,0
+SR053,Jamie Armstrong,CUST053,Crawford LLC,"Calgary, Canada",51.0447,-114.0719,33,Prospecting,74,Medium,07-12-2025,3,1500,Industrial Valves,3,2,0,0.271295671,27.1295671,0
+SR054,Debra Gonzales,CUST054,Benton-Campbell,"Houston, USA",29.7604,-95.3698,56,Prospecting,80,Medium,6/19/2025,11,500,Pipeline Equipment,3,2,0,0.009389061,0.9389061,0
+SR055,Blake Johnson,CUST055,"Lucas, Lambert and Andrews",Singapore,1.3521,103.8198,38,Closed Lost,98,Medium,07-07-2025,8,1500,Industrial Valves,0,2,0,0.265348343,26.5348343,0
+SR056,Ryan Hunt,CUST056,"Moon, Carter and Barton","Calgary, Canada",51.0447,-114.0719,52,Closed Lost,127,High,6/23/2025,15,1500,Safety Systems,0,0,0,0.019729976,1.9729976,0
+SR057,Timothy Thomas,CUST057,Smith-Ross,"Doha, Qatar",25.276987,51.520008,19,Negotiation,90,High,7/26/2025,1,1500,Industrial Valves,2,0,1,0.751726531,75.1726531,1
+SR058,Shawn Keller,CUST058,Perkins and Sons,"Calgary, Canada",51.0447,-114.0719,29,Negotiation,64,Medium,7/16/2025,15,500,Industrial Valves,2,2,1,0.748536193,74.8536193,1
+SR059,Christopher Chan,CUST059,Bradshaw-Hall,Singapore,1.3521,103.8198,17,Closed Won,122,Low,7/28/2025,12,1500,Industrial Valves,1,1,1,0.92707429,92.707429,1
+SR060,Michael Waters,CUST060,"Diaz, Kramer and Thomas","Oslo, Norway",59.9139,10.7522,9,Negotiation,54,Low,08-05-2025,3,500,Gas Flow Meters,2,1,1,0.978474713,97.8474713,1
+SR061,Zachary Munoz,CUST061,Hawkins-Bautista,"Houston, USA",29.7604,-95.3698,22,Prospecting,125,Medium,7/23/2025,8,0,Safety Systems,3,2,1,0.781821069,78.1821069,1
+SR062,Kathleen Benjamin,CUST062,Gutierrez-Copeland,"Aberdeen, UK",57.1497,-2.0943,59,Closed Lost,155,Medium,6/16/2025,15,1500,Pressure Regulators,0,2,0,0.007318563,0.7318563,0
+SR063,Brent Thompson,CUST063,West Group,"Oslo, Norway",59.9139,10.7522,46,Negotiation,145,Low,6/29/2025,11,500,Gas Flow Meters,2,1,0,0.036273446,3.6273446,0
+SR064,Hailey Odonnell MD,CUST064,Greene-Lee,"Rotterdam, Netherlands",51.9225,4.47917,36,Prospecting,90,High,07-09-2025,7,0,Pressure Regulators,3,0,0,0.154131116,15.4131116,0
+SR065,Kimberly Medina,CUST065,Neal Inc,"Mumbai, India",19.076,72.8777,37,Closed Lost,149,High,07-08-2025,4,500,Pipeline Equipment,0,0,0,0.131633497,13.1633497,0
+SR066,Devin Navarro,CUST066,Bell Inc,"Houston, USA",29.7604,-95.3698,49,Prospecting,133,Low,6/26/2025,11,1000,Pressure Regulators,3,1,0,0.016756862,1.6756862,0
+SR067,Miss Debra Taylor,CUST067,Marshall Group,"Dubai, UAE",25.276987,55.296249,31,Prospecting,121,High,7/14/2025,12,500,Safety Systems,3,0,0,0.330735927,33.0735927,0
+SR068,Joanna Barrett,CUST068,Brown Group,"Doha, Qatar",25.276987,51.520008,43,Prospecting,147,High,07-02-2025,1,0,Safety Systems,3,0,0,0.020155303,2.0155303,0
+SR069,Steven Herman,CUST069,Bell and Sons,"Houston, USA",29.7604,-95.3698,48,Closed Won,110,Low,6/27/2025,11,1500,Pipeline Equipment,1,1,0,0.035894452,3.5894452,0
+SR070,Kenneth Ramos,CUST070,Long PLC,"Houston, USA",29.7604,-95.3698,8,Closed Won,141,Medium,08-06-2025,13,0,Pressure Regulators,1,2,1,0.990507415,99.0507415,1
+SR071,Ryan Ryan,CUST071,"Brown, Johnson and Mendez","Aberdeen, UK",57.1497,-2.0943,6,Closed Lost,117,High,08-08-2025,14,0,Pipeline Equipment,0,0,1,0.993273832,99.3273832,1
+SR072,Joseph Roy,CUST072,"Gonzalez, Acevedo and Cobb","Dubai, UAE",25.276987,55.296249,6,Prospecting,99,Low,08-08-2025,10,1000,Pipeline Equipment,3,1,1,0.985651042,98.5651042,1
+SR073,Sarah Grant,CUST073,Guerrero LLC,"Aberdeen, UK",57.1497,-2.0943,50,Negotiation,161,Low,6/25/2025,6,0,Pipeline Equipment,2,1,0,0.011625508,1.1625508,0
+SR074,Kimberly Bailey,CUST074,Morales-Thomas,"Mumbai, India",19.076,72.8777,5,Negotiation,71,High,08-09-2025,4,500,Safety Systems,2,0,1,0.985955938,98.5955938,1
+SR075,Douglas Garrison,CUST075,Ewing LLC,"Dubai, UAE",25.276987,55.296249,3,Closed Won,160,Medium,08-11-2025,2,500,Pressure Regulators,1,2,1,0.989930504,98.9930504,1
+SR076,James Montgomery,CUST076,"Rose, Nicholson and Stewart","Rotterdam, Netherlands",51.9225,4.47917,4,Negotiation,112,Low,08-10-2025,12,1500,Industrial Valves,2,1,1,0.992050987,99.2050987,1
+SR077,Jeffery Campbell,CUST077,Mckee and Sons,"Rotterdam, Netherlands",51.9225,4.47917,28,Negotiation,133,High,7/17/2025,5,1000,Gas Flow Meters,2,0,1,0.364232208,36.4232208,0
+SR078,Andrew Schultz,CUST078,"Juarez, Morgan and Mueller","Mumbai, India",19.076,72.8777,47,Negotiation,134,Low,6/28/2025,4,500,Industrial Valves,2,1,0,0.020080501,2.0080501,0
+SR079,Billy Randall,CUST079,Collins-Montoya,"Dubai, UAE",25.276987,55.296249,34,Prospecting,126,Medium,07-11-2025,15,0,Gas Flow Meters,3,2,0,0.378868133,37.8868133,0
+SR080,Thomas Russell,CUST080,"Costa, Barr and Lindsey","Doha, Qatar",25.276987,51.520008,29,Closed Lost,75,Medium,7/16/2025,7,0,Industrial Valves,0,2,1,0.730225427,73.0225427,1
+SR081,Thomas Greene,CUST081,"Rivera, Harrison and Preston","Calgary, Canada",51.0447,-114.0719,36,Closed Won,108,Medium,07-09-2025,12,1000,Gas Flow Meters,1,2,0,0.353586912,35.3586912,0
+SR082,Elizabeth Lee,CUST082,Blair-Mcdonald,"Oslo, Norway",59.9139,10.7522,25,Closed Won,30,High,7/20/2025,8,0,Industrial Valves,1,0,1,0.800329015,80.0329015,1
+SR083,Jacob Cobb Jr.,CUST083,"Romero, Jackson and Johnson","Dubai, UAE",25.276987,55.296249,43,Negotiation,27,High,07-02-2025,3,1500,Pipeline Equipment,2,0,0,0.057085882,5.7085882,0
+SR084,Shawn Leblanc,CUST084,Hale and Sons,Singapore,1.3521,103.8198,48,Prospecting,71,High,6/27/2025,12,500,Pipeline Equipment,3,0,0,0.028273318,2.8273318,0
+SR085,Donald Smith,CUST085,"Brandt, Reynolds and Jones",Singapore,1.3521,103.8198,16,Negotiation,125,Low,7/29/2025,11,1000,Industrial Valves,2,1,1,0.921503766,92.1503766,1
+SR086,Eric Wilson,CUST086,Schultz PLC,"Oslo, Norway",59.9139,10.7522,60,Prospecting,97,Low,6/15/2025,11,1000,Pipeline Equipment,3,1,0,0.002794716,0.2794716,0
+SR087,Tracy Mcdaniel,CUST087,Turner-Morales,"Houston, USA",29.7604,-95.3698,43,Closed Lost,62,Low,07-02-2025,1,0,Industrial Valves,0,1,0,0.095910638,9.5910638,0
+SR088,Dana Garcia,CUST088,"Green, Randall and Miller","Mumbai, India",19.076,72.8777,31,Negotiation,142,Medium,7/14/2025,8,1500,Industrial Valves,2,2,0,0.373070575,37.3070575,0
+SR089,Wesley Buchanan,CUST089,Johnson Inc,"Aberdeen, UK",57.1497,-2.0943,10,Prospecting,143,Medium,08-04-2025,12,1000,Safety Systems,3,2,1,0.972089938,97.2089938,1
+SR090,Nathan Jacobson,CUST090,Nelson-Hurley,"Dubai, UAE",25.276987,55.296249,37,Negotiation,142,Medium,07-08-2025,11,500,Pipeline Equipment,2,2,0,0.215157162,21.5157162,0
+SR091,Mr. Michael Jones,CUST091,Cook-Kennedy,"Calgary, Canada",51.0447,-114.0719,22,Closed Lost,41,High,7/23/2025,1,0,Pressure Regulators,0,0,1,0.834090055,83.4090055,1
+SR092,Thomas Hughes,CUST092,"Fox, Wong and Martinez",Singapore,1.3521,103.8198,12,Closed Lost,113,Medium,08-02-2025,6,1500,Pipeline Equipment,0,2,1,0.974249009,97.4249009,1
+SR093,Matthew Morse,CUST093,Kim-Morgan,"Oslo, Norway",59.9139,10.7522,28,Negotiation,135,Low,7/17/2025,10,500,Pipeline Equipment,2,1,1,0.530411075,53.0411075,1
+SR094,Daniel Rose,CUST094,Jones LLC,"Doha, Qatar",25.276987,51.520008,10,Closed Lost,98,Low,08-04-2025,6,1500,Pipeline Equipment,0,1,1,0.979361175,97.9361175,1
+SR095,George Bush,CUST095,Williams-Pierce,"Doha, Qatar",25.276987,51.520008,57,Closed Won,57,High,6/18/2025,13,1000,Gas Flow Meters,1,0,0,0.009569733,0.9569733,0
+SR096,Cheryl Lawson,CUST096,Rodriguez-Jennings,"Perth, Australia",-31.9505,115.8605,60,Prospecting,119,Medium,6/15/2025,13,500,Pressure Regulators,3,2,0,0.003817579,0.3817579,0
+SR097,Frederick Harrell,CUST097,Meyer and Sons,"Mumbai, India",19.076,72.8777,25,Closed Lost,73,High,7/20/2025,9,500,Pressure Regulators,0,0,1,0.787527955,78.7527955,1
+SR098,Jason Douglas,CUST098,"Smith, Gaines and Sanchez","Doha, Qatar",25.276987,51.520008,11,Negotiation,102,Low,08-03-2025,9,1000,Gas Flow Meters,2,1,1,0.968831533,96.8831533,1
+SR099,Ellen White,CUST099,Blake Inc,"Aberdeen, UK",57.1497,-2.0943,51,Closed Won,165,High,6/24/2025,9,0,Pressure Regulators,1,0,0,0.011369606,1.1369606,0
+SR100,Leah Carrillo,CUST100,Berry Ltd,"Calgary, Canada",51.0447,-114.0719,38,Closed Won,115,High,07-07-2025,11,500,Pipeline Equipment,1,0,0,0.173322854,17.3322854,0

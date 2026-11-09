@@ -1,0 +1,134 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+</head>
+
+{% extends "base.html" %}
+
+    {% block form_container %}
+    <div class="form-container">
+        <h1>Parameters</h1>
+        <div class="sidebar-divider"></div>
+        <form action="{{ url_for('submit_home_form') }}" method="post" id="userForm">
+            <div class="form-group">
+
+                <label for="planner_name_desc_id">1.Planner Details</label>                
+                <select id="planner_name_desc_id" name="planner_name_desc_id" required>
+                    {% for planner in form_data.planner_name_desc %}
+                        <option value='{{ planner }}'>{{ planner }}</option>
+                    {% endfor %}
+                </select>
+                <label for="assigned_priority">2. Assigned Priority</label>                
+                <select id="assigned_priority" name="assigned_priority" required>
+                    {% for priority in form_data.assigned_priority %}
+                            <option value='{{ priority }}'>{{ priority }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    {% endblock %}
+
+    {% block navbar_main %}
+    <div class="cards-container">
+        {% if form_data %}
+            <div class="card">
+                <h3>Number of Records</h3>
+                <p>{{ form_data.number_of_records}}</p>
+                <i class="fas fa-clock card-icon"></i> <!-- Clock icon -->
+            </div>
+            <div class="card">
+                <h3>High Priority Ticket</h3>
+                <p>{{ form_data.high_priority_info.high_priority }}<span>&nbsp;&nbsp;({{ form_data.high_priority_info.high_priority_info }} )</span></p>
+                <i class="fas fa-poll card-icon"></i> <!-- Dollar sign icon -->
+            </div>
+            <div class="card">
+                <h3>Supplier</h3>
+                <p>{{ form_data.selected_planner }}</p>
+                <i class="fas fa-bullhorn card-icon"></i> <!-- Bullhorn icon -->
+            </div>
+            <div class="card">
+                <h3>Execption Status</h3>
+                <p>{{ form_data.number_of_exception }}<span>&nbsp;&nbsp;(Cancelled)</span></p>
+                <i class="fas fa-bullhorn card-icon"></i> <!-- Poll icon -->
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Plotly Charts Section -->
+    <div class="section1-card-container">
+        
+        <div class="card-wrapper">
+            <div class="upload-info">
+                <form action="/upload" class="upload-card" method="POST" enctype="multipart/form-data"> 
+                    
+                    <label for="file">
+                        <img src="static/images/csv.png" alt="CSV Upload" style="cursor: pointer; width: 100px;">
+                    </label>
+
+                    <div class="upload-section">
+                        <input id="file" name="file" type="file"
+                            accept=".csv, .xlsx, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                            class="file-input" style="display: none;" /> 
+                    </div>
+                    <button type="submit" class="submit-btn">🚀 Upload</button>
+                </form>
+
+                <p id="file-name" style="margin-top:10px; font-size:14px; color:#374151; font-weight:bold;">
+                    {{ form_data.filename}}
+                </p>
+            </div>
+
+            <div class="statistical-info">
+                <h3>Item Execption Flag Distribution</h3>
+                <div class="sidebar-divider"></div>
+                <div class="bar-exception-flag-chart" id="bar-exception-flag-chart"></div> 
+            </div>
+
+            <div class="summary-info">
+                <h3>Execption Distribution</h3>
+                <div class="sidebar-divider"></div>
+                <div class="bar-exception-chart" id="bar-exception-chart"></div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="section2-card-container">
+        <div class="prediction-table">
+            <div class="prediction-header">
+                    <h3>Priority Based Data Recommendation</h3>
+
+                    <form action="{{ url_for('download_excel') }}" method="get">
+                        <button type="submit" class="download-btn">⬇️ Download File</button>
+                    </form>
+            </div>       
+            <div class="sidebar-divider"></div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            {% for cols in form_data.columns_info%}
+                            
+                                <th>{{ cols }}</th>
+
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                        <tbody>
+                            {% for rows in form_data.records %}
+                                <tr>
+                                    {% for item in rows %}
+                                        <td>{{ item }}</td>
+                                    {% endfor %}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                </table>
+            </div>  
+        </div>
+    </div>
+ 
+{% endblock %}

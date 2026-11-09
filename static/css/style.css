@@ -1,0 +1,872 @@
+/* static/style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    display: flex;
+    /* height: 100vh;  */
+    overflow: hidden;
+}
+/*-------------------------------------------------------------Sidebar ----------------------------------------------------*/
+.sidenav {
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: auto;
+}
+
+.sidenav h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: rgb(99, 99, 233);
+    text-align: center;
+}
+
+.sidenav a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(171, 171, 238);
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #fff;
+    color: rgb(171, 171, 238);
+    border-color: rgb(171, 171, 238);
+}
+
+.sidenav a i {
+    /* margin-left: 10px; */
+    margin-right: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* Style for the icon inside the h1 */
+.sidenav h1 i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 32px; /* Size of the icon */
+}
+
+.sidenav.toggled {
+    width: 60px; /* Width when toggled */
+}
+
+/*---------------------------------------------------------------Dropdown Info-------------------------------------------------------------*/
+/* Dropdown Button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and arrow */
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(171, 171, 238);
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.dropdown-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.dropdown-button .text {
+    flex: 1; /* Takes up available space */
+    text-align: left; /* Ensure text aligns left */
+}
+
+.dropdown-button:hover {
+    background-color: #fff;
+    color: rgb(171, 171, 238);
+    border-color: rgb(171, 171, 238);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid rgb(171, 171, 238);
+    border-radius: 5px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    overflow-y: auto;
+    background-color: rgb(233, 237, 247); /* Optional background color #e0e0e0*/
+}
+
+
+/* Add to static/style.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 18px; /* Apply 15px margin to left and right */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    background-color: rgb(233, 237, 247);
+}
+
+.navbar .toggle-btn {
+    position: absolute;
+    top: 20px;
+    z-index: 1100; /* Ensure the button is above other elements */
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    flex: 0.65;
+}
+
+.navbar-left input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    /*width: 400px; */
+    flex: 1;
+    /* margin-left: 40px; */
+
+}
+
+.navbar-left button {
+    padding: 8px 12px;
+    border: none;
+    background-color: rgb(171, 171, 238);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-left button:hover {
+    background-color: #fff;
+    color: rgb(171, 171, 238);
+    border: 1px solid rgb(171, 171, 238);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    margin-left: 15px;
+    color: rgb(171, 171, 238);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar-right h1{
+    font-size: 18px; 
+    color: rgb(99, 99, 233);
+    margin: 0;
+}
+
+.navbar-right a:hover {
+    color: #000;
+}
+
+.navbar-right .user-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile div {
+    font-size: 16px;
+}
+
+/* Navbar Main Styling */
+.navbar-content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 5px; /* Add padding around the content */
+    margin-bottom: 20px; /* Space below the navbar main */
+}
+
+/*---------------------------------------------------------------Tool Form Info-------------------------------------------------------------*/
+/* Form Container */
+.form-container {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid rgb(171, 171, 238);
+    border-radius: 5px;
+    z-index: 1;
+    top: 100%; /* Position below the dropdown button */
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 80vh; /* Ensure the form does not exceed viewport height */
+    overflow-y: auto; /* Add scroll if content overflows */
+    margin-top: 15px;
+}
+
+.form-container h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(171, 171, 238);
+    font: normal;
+}
+
+.form-group, .form-group-sub {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(171, 171, 238);
+}
+
+.form-group-sub label{
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(171, 171, 238);
+}
+
+.form-group-sub textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* still allows resizing if user wants */
+    
+    overflow-y: auto;  /* vertical scrollbar if content exceeds height */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Full width of the parent container */
+    padding: 10px; /* Space inside the dropdown */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 12px; /* Updated font size */
+    background-color: #fff; /* Background color of the dropdown */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+input[type="date"],
+textarea {
+    width: 100%; /* Full width of the parent container */
+    padding: 10px; /* Space inside the dropdown */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 12px; /* Updated font size */
+    background-color: #fff; /* Background color of the dropdown */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    /* background-color: #007bff; */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+    background-color: rgb(171, 171, 238);
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    color: rgb(74, 74, 209);
+}
+
+.user-input-submit {
+    display: block;
+    margin: 10px auto 0 auto;  /* 5px from top, centered horizontally */
+    padding: 8px 5px;
+    background-color: rgb(171, 171, 238);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 25%;
+    margin-bottom: 1px; /* minimal bottom space */
+}
+
+.user-input-submit:hover {
+    background-color: rgb(171, 171, 238);
+}
+
+/* Show dropdown content when button is clicked */
+.dropdown-button.active + .form-container {
+    display: block;
+}
+
+/* Style for the select dropdown */
+.form-group select, .form-group-sub select {
+    width: 100%; /* Full width of the parent container */
+    padding: 10px; /* Space inside the dropdown */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 12px; /* Font size inside the dropdown */
+    background-color: #fff; /* Background color of the dropdown */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.select2-container .select2-selection--single {
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+/* Focus state for the select dropdown */
+.form-group select:focus, .form-group-sub select:focus {
+    border-color: #007bff; /* Border color on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Optional: Styling for dropdown options */
+.form-group option, .form-group-sub option {
+    padding: 8px; /* Space inside each option */
+    font-size: 12px;
+}
+
+.form-group-sub {
+    flex: 0.5; /* equal width for both */
+   
+}
+.select2-container--default .select2-results__option {
+    font-size: 12px;
+    padding: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; /* space between fields */
+    flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+/*---------------------------------------------------------------sidebar-divider-------------------------------------------------------------*/
+.sidebar-divider {
+    border-top: 2px solid #dee2e6;
+    margin: 5px 0; /* Spacing around the divider */
+}
+
+/* Table Styles */
+.table-container {
+    width: 100%;
+    overflow-y: auto;  /* Enable vertical scrolling */
+    overflow-x: auto;  /* Enable vertical scrolling */
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    height: 50vh; /* 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin: 2px 0; */
+    
+}
+
+th, td {
+    padding: 6px 7px;  /* Add padding to make text more readable */
+    text-align: left;
+    border: 1px solid #ddd;
+
+    text-align: left;
+    width: 20px; /* Set each column to have 20px width */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate long text */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+th {
+     /*  background-color: #f2f2f2; Light gray background for headers */
+    font-weight: normal;
+    color: rgb(171, 171, 238);
+}
+
+td {
+    color: rgb(105, 99, 99);
+}
+
+tbody td {
+    font-size: 14px; /* Make the text slightly smaller for content rows */
+}
+/*---------------------------------------------------------------Card Info-------------------------------------------------------------*/
+.cards-container {
+    margin-top: -15px; /* Space above the container */
+    margin-bottom: 10px; /* Space below the container */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between the cards */
+    justify-content: space-around; /* Align cards with space around them */
+    margin-left: 9px;
+}
+
+.card {
+    background:#f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Increased padding to make space for the icon */
+    width: 23.2%; /* Adjust width as needed */
+    text-align: left; /* Align text to the left */
+    position: relative; /* Required for positioning the icon */
+    transition: background 0.3s, transform 0.3s;
+}
+
+.card h3 {
+    margin: 5px 0;
+    font-size: 1.0vw; /* Make heading font size smaller */
+    text-align: left; /* Align heading to the left */
+    color: #6cb0f9;
+    transition: background-color 0.3s, border-color 0.3s;
+    font: inherit;
+}
+
+.card p {
+    font-size: 1.25vw; /* Make the paragraph text size larger */
+    color: rgb(105, 99, 99);
+    margin: 0; /* Remove default margin to align closer */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 5px;
+}
+
+.card span{
+    font-size: 0.95vw; /* Make the paragraph text size larger */
+    color: rgb(105, 99, 99);
+    margin: 0; /* Remove default margin to align closer */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 5px;
+}
+.card-icon {
+    font-size: 1.9vw; /* Adjust icon size as needed */
+    color: #c8d4da; /* Color of the icon */
+    position: absolute; /* Positioning the icon absolutely */
+    right: 25px; /* Distance from the right edge */
+    top: 50%; /* Vertically center the icon relative to the card */
+    transform: translateY(-50%); /* Correct vertical alignment */
+}
+
+.card:hover {
+    background:  #f6f1f1;
+    transform: translateY(-5px);
+}
+
+
+/*-------------------------------------------------------------Plot info-Home Page ----------------------------------------------------*/
+.section1-card-container,.section2-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin-right: 6px; /* Space inside the container */
+    margin-left: 15px; /* Space inside the container */
+    margin-top: 15px;
+}
+
+/* Individual card styling */
+.sub-categories-info h3, .section1-card-container h3 {
+    margin: 5px 0;
+    font-size: 1.0vw; /* Make heading font size smaller */
+    text-align: left; /* Align heading to the left */
+    color: #6cb0f9;
+    transition: background-color 0.3s, border-color 0.3s;
+    font: inherit;
+    margin-top: 0px;
+}
+
+.section2-card-container h3 {
+    margin: 5px 0;
+    font-size: 1.0vw; /* Make heading font size smaller */
+    text-align: left; /* Align heading to the left */
+    color: #6cb0f9;
+    transition: background-color 0.3s, border-color 0.3s;
+    font: inherit;
+    margin-top: 10px;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 10px; /* space between cards */
+    width: 100%;
+}
+
+/* .section1-card-container .parameter-info{
+    flex: 0.4;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.section1-card-container .sub-categories-info {
+    flex: 0.6;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+} */
+
+/* .section2-card-container {
+    height: 8vh;
+    overflow: hidden;       
+    transition: height 0.3s ease; 
+    cursor: pointer;
+}
+
+.section2-card-container.expanded {
+    height: auto;
+} */
+
+/*-----------------------------------------------------------------------------------------------*/
+.upload-info, .statistical-info, .summary-info {
+    background: #f8f8f8;
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 9px; /* Space inside the card */
+    width: 100%; /* Full width of the card container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    /* height: 40vh;  */
+    /* Fixed height for the chart */
+}
+
+.upload-info {
+    flex: 0.2;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.upload-card{
+    border: 2px dotted #6b7280; /* gray dotted border */
+    padding: 5px;
+}
+
+.statistical-info {
+    flex: 0.425;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.statistical-info h3, .summary-info h3 {
+    margin: 5px 0;
+    font-size: 1.0vw; /* Make heading font size smaller */
+    text-align: left; /* Align heading to the left */
+    color: #6cb0f9;
+    transition: background-color 0.3s, border-color 0.3s;
+    font: inherit;
+    margin-top: -5px;
+}
+
+
+.summary-info {
+    flex: 0.425;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.prediction-table{
+    background: #f8f8f8;
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 9px; /* Space inside the card */
+    width: 100%; /* Full width of the card container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    flex: 1;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.prediction-table h3{
+    margin: 5px 0;
+    font-size: 1.0vw; /* Make heading font size smaller */
+    text-align: left; /* Align heading to the left */
+    color: #6cb0f9;
+    transition: background-color 0.3s, border-color 0.3s;
+    font: inherit;
+    margin-top: -2px;
+}
+
+
+.bar-exception-chart, .bar-exception-flag-chart{
+    width: 100%; /* Full width of the card */
+    height: 30vh; /* Fixed height for the chart */
+    background-color: #f9f9f9; /* Light gray background to distinguish the chart area */
+    border-radius: 4px; /* Slightly rounded corners */    
+}
+
+.prediction-table{
+    /* height: 50vh; */
+    overflow: hidden;       
+    transition: height 0.3s ease; 
+    cursor: pointer;
+}
+
+.prediction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-btn {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(171, 171, 238);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    /* font-weight: 500; */
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.download-btn:hover {
+    color: #201f1f;
+    background-color: rgb(171, 171, 238);
+    transform: scale(1.05);
+}
+
+.upload-info:hover {
+    transform: scale(1.02);
+}
+
+.upload-info img {
+    width: 45%;
+    height: 50%;
+    margin-bottom: 8px;
+}
+
+.upload-section {
+    margin-top: 2px;
+}
+
+.file-input {
+    display: none;
+}
+
+.custom-file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #6cb0f9;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.custom-file-label:hover {
+    background-color: #4338ca;
+}
+
+#file-name {
+    margin-top:10px; 
+    font-size:14px; 
+    color:#374151; 
+    font-weight:bold; 
+    word-wrap: break-word; 
+    overflow-wrap: anywhere; 
+    white-space: normal;
+}
+/*-------------------------------------------------------------Footer info ----------------------------------------------------*/
+/* Footer Styling */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px; 
+    text-align: center;
+    border-top: 1px solid #e7e7e8;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure footer is positioned correctly */
+
+    margin-left: 18px;
+    margin-right: 14px;
+    margin-top: -10px;
+}
+
+.footer-content {
+    /* max-width: 1200px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 10px;
+    
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+
+font-size: 16px;
+}
+
+/* Styles for when the window width is greater than 1400px */
+@media (min-width: 1401px) {
+
+    .bar-chart-cards img {
+        height: 26vh;
+    }
+
+    .section2-card-container {
+        height: 5vh;
+    }
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-left input, .navbar-left button {
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+
+    .navbar-right {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-left input {
+        width: 100%;
+    }
+}

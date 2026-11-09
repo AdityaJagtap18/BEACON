@@ -1,0 +1,83 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 28vw; /*  max-width: 400px; */
+    width: 100%;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(99, 99, 233);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: rgb(99, 99, 233);
+    outline: none;
+}
+
+.btn-primary {
+    background-color: rgb(99, 99, 233);
+    border-color: rgb(99, 99, 233);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: rgb(99, 99, 233);
+    border-color: rgb(99, 99, 233);
+}
+
+.text-center {
+    margin-top: 20px;
+}
+
+.text-center a {
+    color: rgb(99, 99, 233);
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for when the window width is greater than 1400px */
+@media (min-width: 1401px) {
+
+    .login-container {
+        max-width: 20vw; /*  max-width: 400px; */
+
+    }
+}
